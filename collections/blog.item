@@ -23,6 +23,9 @@
       <span class="published"><a href="{fullUrl}" title="Permalink" class="permalink"><time datetime="{addedOn|date %F}">{addedOn|date %B %d, %Y}</time></a></span>
       {.if categories} in <span class="category">{.repeated section categories}<a href="{collection.fullUrl}?category={@}" rel="tag">{@}</a>{.alternates with}, {.end}</span>{.end}
     </div>
+     <div class="byline">
+             <address class="author">By <a href="?author={author.id}">{author.displayName}</a></address>
+           </div>
   </header>
     
   <!--POST BODY-->
